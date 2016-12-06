@@ -1,0 +1,75 @@
+/*
+Theme Name: Frattini
+Theme URI: http://themeforest.net/user/xpertpoin8
+Description: Frattini Wordpress Coffee shop, Restaurant and Cake Bakery.
+Tags: Onepage, coffee shop, restaurant, cake bakery
+Version: 1.1
+Author: xpertpoin8
+Author URI: http://xpertpoin8.com/
+License: http://themes.newgraphicses.it
+License URI: http://themes.newgraphicses.it
+*/
+@import "bootstrap.min.css";
+@import "flexslider.css";
+@import "jquery.jscrollpane.custom.css";
+@import "jquery.bxslider.css";
+@import "lightbox.css";
+@import "font-awesome.min.css";
+@import "flaticon.css";
+@import "styles.css";
+.main-benner{
+	position: relative;
+	display: block;
+}
+
+.location-search-outer {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.location-search-inner {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.location-search-area {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.input-group {
+  border: 0 solid #fff;
+  border-collapse: separate;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  display: table;
+  margin: auto;
+  position: relative;
+}
+img {
+  vertical-align: middle;
+  width: 100%;
+}
+.btn{
+	font-size: 25px;
+	border-radius: 0;
+}
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 320px;
+}
+.cart__empty__elements {
+  padding: 0;
+}
+
+.item-price {
+    font-size: 14px;
+}
+.item-price i {
+    cursor: pointer;
+    padding: 7px 0;
+    width: 15px;
+}
+
+

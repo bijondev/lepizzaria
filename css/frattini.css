@@ -1,0 +1,19 @@
+/*
+Theme Name: Frattini
+Theme URI: http://themeforest.net/user/xpertpoin8
+Description: Frattini Wordpress Coffee shop, Restaurant and Cake Bakery.
+Tags: Onepage, coffee shop, restaurant, cake bakery
+Version: 1.1
+Author: xpertpoin8
+Author URI: http://xpertpoin8.com/
+License: http://themes.newgraphicses.it
+License URI: http://themes.newgraphicses.it
+*/
+@import "css/bootstrap.min.css";
+@import "css/flexslider.css";
+@import "css/jquery.jscrollpane.custom.css";
+@import "css/jquery.bxslider.css";
+@import "css/lightbox.css";
+@import "fonts/css/font-awesome.min.css";
+@import "icons/flaticon.css";
+@import "css/styles.css";

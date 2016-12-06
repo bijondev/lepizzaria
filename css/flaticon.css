@@ -1,0 +1,126 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+	font-style: normal;
+
+}.flaticon-birthday15:before {
+	content: "\e000";
+}
+.flaticon-birthday2:before {
+	content: "\e001";
+}
+.flaticon-birthday20:before {
+	content: "\e002";
+}
+.flaticon-birthday3:before {
+	content: "\e003";
+}
+.flaticon-black47:before {
+	content: "\e004";
+}
+.flaticon-christmas161:before {
+	content: "\e005";
+}
+.flaticon-coffee26:before {
+	content: "\e006";
+}
+.flaticon-cooking15:before {
+	content: "\e007";
+}
+.flaticon-covered16:before {
+	content: "\e008";
+}
+.flaticon-cup10:before {
+	content: "\e009";
+}
+.flaticon-cup38:before {
+	content: "\e00a";
+}
+.flaticon-cup6:before {
+	content: "\e00b";
+}
+.flaticon-cupcake3:before {
+	content: "\e00c";
+}
+.flaticon-cupcake4:before {
+	content: "\e00d";
+}
+.flaticon-food20:before {
+	content: "\e00e";
+}
+.flaticon-food32:before {
+	content: "\e00f";
+}
+.flaticon-headphone4:before {
+	content: "\e010";
+}
+.flaticon-heating5:before {
+	content: "\e011";
+}
+.flaticon-hot:before {
+	content: "\e012";
+}
+.flaticon-hot13:before {
+	content: "\e013";
+}
+.flaticon-hot16:before {
+	content: "\e014";
+}
+.flaticon-hot50:before {
+	content: "\e015";
+}
+.flaticon-hot51:before {
+	content: "\e016";
+}
+.flaticon-hot56:before {
+	content: "\e017";
+}
+.flaticon-hot73:before {
+	content: "\e018";
+}
+.flaticon-ice19:before {
+	content: "\e019";
+}
+.flaticon-man75:before {
+	content: "\e01a";
+}
+.flaticon-old4:before {
+	content: "\e01b";
+}
+.flaticon-pizza4:before {
+	content: "\e01c";
+}
+.flaticon-plate7:before {
+	content: "\e01d";
+}
+.flaticon-romantic2:before {
+	content: "\e01e";
+}
+.flaticon-serving1:before {
+	content: "\e01f";
+}
+.flaticon-soup4:before {
+	content: "\e020";
+}
+.flaticon-spongy:before {
+	content: "\e021";
+}
+.flaticon-sushi2:before {
+	content: "\e022";
+}
+.flaticon-teacup1:before {
+	content: "\e023";
+}
+.flaticon-wedding1:before {
+	content: "\e024";
+}

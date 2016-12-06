@@ -1,0 +1,353 @@
+/*
+Theme Name: Le Pizzaria
+Theme URI: https://wordpress.org/themes/twentysixteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, red, white, yellow, dark, light, one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentysixteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Normalize
+ * 2.0 - Genericons
+ * 3.0 - Typography
+
+s * 4.0 - Elements
+ * 5.0 - Forms
+ * 6.0 - Navigation
+ *   6.1 - Links
+ *   6.2 - Menus
+ * 7.0 - Accessibility
+ * 8.0 - Alignments
+ * 9.0 - Clearings
+ * 10.0 - Widgets
+ * 11.0 - Content
+ *    11.1 - Header
+ *    11.2 - Posts and pages
+ *    11.3 - Post Formats
+ *    11.4 - Comments
+ *    11.5 - Sidebar
+ *    11.6 - Footer
+ * 12.0 - Media
+ *    12.1 - Captions
+ *    12.2 - Galleries
+ * 13.0 - Multisite
+ * 14.0 - Media Queries
+ *    14.1 - >= 710px
+ *    14.2 - >= 783px
+ *    14.3 - >= 910px
+ *    14.4 - >= 985px
+ *    14.5 - >= 1200px
+ * 15.0 - Print
+ */
+
+
+/**
+ * 1.0 - Normalize
+ *
+ * Normalizing styles have been helped along thanks to the fine work of
+ * Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+ */
+.margin-top-100{
+    margin-top: 100px;
+}
+.image-logo img{
+	width: 100%;
+}
+.food-image img{
+    width:100%;
+}
+.item-content h4{
+	margin: 0;
+}
+.cat-image{
+	padding-bottom: 30px;
+}
+.cat-image img{
+	width: 100%;
+}
+
+	 html,body{font-family:'Open Sans'}
+	 .flex-control-paging li a:hover { background:#d81c0a; }
+.flex-control-paging li a.flex-active { background:#d81c0a;  }
+.navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>li>a:focus {
+	background-color:#d81c0a; }
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>.active>a:focus {
+	background-color:#d81c0a; }
+a{color:#d81c0a;}
+.fullspan.dark {
+  background: #ed1c24 none repeat scroll 0 0;
+}
+.price{background:#d81c0a;}
+.legend span{color:#d81c0a;}
+.social-mid a:hover .fa { background:#d81c0a; }
+.hi-icon-effect-1 .hi-icon { background: #d81c0a; }
+.logo span { color:#d81c0a; }
+
+#pinterest-pinboard-widget-container .pin_link a:hover {  background: #d81c0a;  }
+#null-instagram-feed-2 .clear-pop a:hover {  background: #d81c0a;  }
+.tweets-container .follow-btn:hover { background: #d81c0a;   }
+.reservation-form .reservation legend  { color: #d81c0a; }
+.reservation-form button {background: #d81c0a;   }
+.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {  background: #d81c0a !important;}
+.picker__day--highlighted:hover, .picker--focused .picker__day--highlighted {    background: none repeat scroll 0 0 #d81c0a !important; }
+.picker__month { color: #d81c0a !important;}
+.picker__list-item--highlighted:hover, .picker--focused .picker__list-item--highlighted {     background: none repeat scroll 0 0 #d81c0a !important; }
+.picker__list-item--highlighted { border-color: #d81c0a !important;}
+.rtb-booking-form .rtb-error { font-family:'Open Sans' !important;  }
+.picker--time .picker__button--clear {  background: #d81c0a  !important; } 
+/* secondary color */ 
+.hi-icon-effect-1 .hi-icon:after {    box-shadow: 0 0 0 4px #fdc51d; }
+.hi-icon-effect-1a .hi-icon:hover {
+    background: #fdc51d; }
+a:hover{color:#fdc51d; }
+.fullspan.copy{background:#fff; }
+.fullspan.copy {
+  color: #000000 !important;
+
+}
+footer .copy a {
+  color: #000 !important;
+}
+footer h4{color:#fdc51d;}
+input[disabled].submit { background:#fdc51d;  }
+.navbar-toggle .fa { color:#fdc51d;}
+.navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>li>a:focus { border-bottom:3px solid #fdc51d; } 
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>.active>a:focus {  
+border-bottom:3px solid #fdc51d;
+}
+.wpcf7-form input[type=submit]{background:#fdc51d; }
+.contactform input.error,.contactform textarea.error,.newsletter input.error{background:#fdc51d;}
+.wpcf7-form input[type=submit]:hover{color:#fdc51d }
+#parallax .bg {background-image:url(image/parallax.jpg)}
+.bx-wrapper .bx-prev {	left: 0;	background: url("<?php echo get_template_directory_uri(); ?>/image/gprev.png") no-repeat scroll center 8px #d81c0a; }
+.bx-wrapper .bx-next { right: 0;	background: url("<?php echo get_template_directory_uri(); ?>/image/gnext.png") no-repeat scroll center 8px #d81c0a;}
+.bx-wrapper .bx-prev:hover { background: url("<?php echo get_template_directory_uri(); ?>/image/gprev.png") no-repeat scroll center 8px #fdc51d }
+.bx-wrapper .bx-next:hover { background: url("<?php echo get_template_directory_uri(); ?>/image/gnext.png") no-repeat scroll center 8px #fdc51d	 }$
+#searchsubmit {
+ background:#fdc51d;
+}
+.reservation-form button {
+background: #d81c0a;	
+}
+.reservation-form button:hover 
+.twitter-box .tweets-container ul li .jtwt_date , .twitter-box .tweets-container ul li p a {
+	 color: #fdc51d !important;
+}
+blockquote {
+	border-left:5px solid #d81c0a;
+}
+a {
+color:#d81c0a;
+}
+a:hover {
+color:#fdc51d;	
+}
+#null-instagram-feed-2 .clear-pop a {  background: #fdc51d; }
+.tweets-container .follow-btn {  background: #fdc51d;  } 
+#pinterest-pinboard-widget-container .pin_link a {  background: #fdc51d; }
+.picker__button--clear::before { border-top: 3px solid #fdc51d !important;}
+.picker__day--infocus:hover, .picker__day--outfocus:hover { background:#fdc51d !important;   }
+.twitter-box .tweets-container ul li p a { color: #fdc51d !important; }
+.twitter-box .tweets-container ul li .jtwt_date {color: #fdc51d !important;  }
+.reservation-form button:hover {background: #fdc51d;  }
+.picker__day--today::before { border-top: 0.5em solid #fdc51d !important;}
+#menu-vertical li > a{
+	transition: .3s;
+}
+#menu-vertical li > a:hover {
+    background: none;
+    color: #fdc51d !important;
+}
+
+.top-right > p {
+  color: #ffffff;
+  font-size: inherit;
+  margin: 0;
+  text-transform: uppercase;
+}
+.top-right h3 {
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+}
+.top-right.col-md-6.pull-right.text-right {
+    margin-top: 8px;
+}
+.btn-group .btn {
+  border-radius: 3px;
+  margin-left: 0;
+}
+.btn {
+  border-radius: 3px !important;
+}
+.btn.btn-primary.btn-xs.inc-item {
+  font-size: 15px;
+  line-height: 15px;
+  margin-right: 2px;
+  padding: 2px;
+}
+.btn.btn-primary.btn-xs.dec-item {
+  font-size: 15px;
+  line-height: 15px;
+  padding: 2px 4px;
+}
+#cart-box > div {
+  border-bottom: 1px solid #eeeeee;
+  display: block;
+  float: left;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+#cart-total-price > div {
+  margin-bottom: 10px;
+}
+.cart__inner.affix {
+  background: #ffffff none repeat scroll 0 0;
+  height: 100%;
+  max-width: 265px;
+  width: 100%;
+}
+.mobile-cart {
+  display: none;
+  }
+.menu-cart {
+  background: #ffffff none repeat scroll 0 0;
+
+  transition: all 0.03s ease 0s;
+
+}
+.menu-cart.show {
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.03s ease 0s;
+
+}
+.navbar-inverse {
+  box-shadow: 0 0 0 #cccccc;
+  background-color: rgba(0,0,0,0.0);
+}
+.navbar-inverse.sticky{
+  background-color: #ffffff;
+  box-shadow: 0 0 2px #cccccc;
+}
+.navbar-inverse.sticky p{
+  color: #ED1C24;
+}
+.navbar-inverse.sticky h3{
+  color: #222;
+}
+.input-group {
+  border: 0 solid #ffffff;
+  border-collapse: separate;
+  border-radius: 5px;
+  display: block;
+  float: left;
+  margin: auto auto auto 10%;
+  position: relative;
+  width: 30%;
+}
+.form-inline .form-group {
+  display: inline-block;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+.home-search {
+    width: 320px !important;
+}
+label.home-text {
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+/*********************RESPONSIVE**********************************/
+@media only screen and (min-width: 320px) and (max-width: 980px) {
+.mobile-cart {
+  background: #ed1c24 none repeat scroll 0 0;
+  border-radius: 100%;
+  display: block;
+  font-size: 50px;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 50px;
+  z-index: 999;
+}
+.fa.fa-shopping-cart {
+  color: #ffffff;
+  float: left;
+  font-size: 27px;
+  padding: 0;
+}
+.btn.btn-default.crt-btn {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 0 none;
+  padding: 0;
+}
+}
+
+@media screen and (max-width: 765px) {
+    .logo {
+        width: 30%;
+    }
+    .navbar-inverse .logo a img {
+    width: 100% !important;
+}
+    .top-right.col-md-6.pull-right.text-right{
+        width: 70%;
+        
+    }
+    .top-right h3 {
+    font-family: inherit;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.top-right > p {
+    color: #ed1c24;
+    font-size: inherit;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 9px;
+}
+.main-benner {
+    position: relative;
+    display: block;
+    margin-top: 26px;
+}
+.btn {
+    font-size: 15px !important;
+}
+
+}
+.margin-top-120 {
+  margin-top: 152px;
+}
+main {
+  margin-top: 100px;
+}
+h1.entry-title {
+  text-align: center;
+}
